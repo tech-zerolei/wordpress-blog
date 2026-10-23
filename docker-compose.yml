@@ -1,0 +1,45 @@
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    restart: unless-stopped
+    ports:
+      - "371:80"
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: wpdb:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: WpDb_9xK2mZpWv4Q
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wp_html:/var/www/html
+    depends_on:
+      wpdb:
+        condition: service_healthy
+    networks:
+      - wp-net
+  wpdb:
+    image: mariadb:11
+    container_name: wpdb
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: WpDb_9xK2mZpWv4Q
+      MARIADB_ROOT_PASSWORD: WpRoot_7kL3nQx8vZ2
+    volumes:
+      - wp_db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 120s
+    networks:
+      - wp-net
+volumes:
+  wp_db:
+  wp_html:
+networks:
+  wp-net:
+    driver: bridge

@@ -1,0 +1,19 @@
+# 运行时产物（可再生成，不入库）
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/et-cache/
+**/*.log
+*.tmp
+*.bak
+
+# WP 核心（由 vendor/ 下的核心包或镜像提供，不展开入库）
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-*.php
+!wordpress/wp-config.php
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
