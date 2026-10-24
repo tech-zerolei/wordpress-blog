@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-24",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.63996,
+      "total_seconds": 0.750313,
+      "bytes": 64946
+    },
+    {
+      "path": "/?p=112",
+      "status": 200,
+      "ttfb_seconds": 0.641691,
+      "total_seconds": 0.784073,
+      "bytes": 150067
+    },
+    {
+      "path": "/?p=108",
+      "status": 200,
+      "ttfb_seconds": 0.641764,
+      "total_seconds": 0.813169,
+      "bytes": 141167
+    },
+    {
+      "path": "/?p=101",
+      "status": 200,
+      "ttfb_seconds": 0.451813,
+      "total_seconds": 0.624032,
+      "bytes": 123662
+    },
+    {
+      "path": "/?p=44",
+      "status": 200,
+      "ttfb_seconds": 0.71023,
+      "total_seconds": 0.948468,
+      "bytes": 372547
+    },
+    {
+      "path": "/?p=39",
+      "status": 200,
+      "ttfb_seconds": 0.494448,
+      "total_seconds": 0.628065,
+      "bytes": 95204
+    },
+    {
+      "path": "/?cat=8",
+      "status": 200,
+      "ttfb_seconds": 0.338903,
+      "total_seconds": 0.440866,
+      "bytes": 50343
+    },
+    {
+      "path": "/?cat=9",
+      "status": 200,
+      "ttfb_seconds": 1.300746,
+      "total_seconds": 1.398131,
+      "bytes": 47964
+    },
+    {
+      "path": "/?cat=10",
+      "status": 200,
+      "ttfb_seconds": 0.339062,
+      "total_seconds": 0.451312,
+      "bytes": 44348
+    },
+    {
+      "path": "/?cat=11",
+      "status": 200,
+      "ttfb_seconds": 1.358707,
+      "total_seconds": 1.470362,
+      "bytes": 44331
+    },
+    {
+      "path": "/?s=EVA",
+      "status": 200,
+      "ttfb_seconds": 0.374611,
+      "total_seconds": 0.50963,
+      "bytes": 66740
+    },
+    {
+      "path": "/?s=zero-no-such-article",
+      "status": 200,
+      "ttfb_seconds": 0.271205,
+      "total_seconds": 0.364466,
+      "bytes": 46237
+    },
+    {
+      "path": "/wp-login.php",
+      "status": 200,
+      "ttfb_seconds": 1.362589,
+      "total_seconds": 1.369051,
+      "bytes": 10843
+    },
+    {
+      "path": "/wp-admin/",
+      "status": 302,
+      "ttfb_seconds": 0.247257,
+      "total_seconds": 0.247286,
+      "bytes": 0
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/style.css",
+      "status": 200,
+      "ttfb_seconds": 0.239046,
+      "total_seconds": 0.295668,
+      "bytes": 24181
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/main.js",
+      "status": 200,
+      "ttfb_seconds": 0.2449,
+      "total_seconds": 0.297101,
+      "bytes": 14603
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/assets/sakura-dusk.svg",
+      "status": 200,
+      "ttfb_seconds": 0.203791,
+      "total_seconds": 0.203993,
+      "bytes": 3572
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/petals.js",
+      "status": 200,
+      "ttfb_seconds": 0.227171,
+      "total_seconds": 0.227308,
+      "bytes": 2131
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/clickStars.js",
+      "status": 200,
+      "ttfb_seconds": 0.224736,
+      "total_seconds": 0.224772,
+      "bytes": 897
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/cardLift.js",
+      "status": 200,
+      "ttfb_seconds": 0.228606,
+      "total_seconds": 0.228643,
+      "bytes": 174
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/heroGlow.js",
+      "status": 200,
+      "ttfb_seconds": 0.238105,
+      "total_seconds": 0.23814,
+      "bytes": 210
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/glassNav.js",
+      "status": 200,
+      "ttfb_seconds": 0.226167,
+      "total_seconds": 0.226208,
+      "bytes": 294
+    },
+    {
+      "path": "/wp-content/mu-plugins/zero-anime/modules/readingProgress.js",
+      "status": 200,
+      "ttfb_seconds": 0.232921,
+      "total_seconds": 0.232958,
+      "bytes": 1270
+    }
+  ],
+  "before_home": [
+    {
+      "status": 200,
+      "ttfb_seconds": 0.477003,
+      "total_seconds": 0.59854,
+      "html_bytes": 112551
+    },
+    {
+      "status": 200,
+      "ttfb_seconds": 0.360183,
+      "total_seconds": 0.506446,
+      "html_bytes": 112551
+    },
+    {
+      "status": 200,
+      "ttfb_seconds": 1.391404,
+      "total_seconds": 1.545073,
+      "html_bytes": 112551
+    },
+    {
+      "status": 200,
+      "ttfb_seconds": 0.371799,
+      "total_seconds": 0.536307,
+      "html_bytes": 112551
+    },
+    {
+      "status": 200,
+      "ttfb_seconds": 0.44464,
+      "total_seconds": 0.569374,
+      "html_bytes": 112551
+    }
+  ],
+  "after_home": [
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.338478,
+      "total_seconds": 0.45149,
+      "bytes": 64947
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.377837,
+      "total_seconds": 0.509853,
+      "bytes": 64947
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.441954,
+      "total_seconds": 0.520412,
+      "bytes": 64947
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.428264,
+      "total_seconds": 0.497494,
+      "bytes": 64947
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "ttfb_seconds": 0.379132,
+      "total_seconds": 0.505238,
+      "bytes": 64947
+    }
+  ],
+  "before_median_ttfb": 0.44464,
+  "after_median_ttfb": 0.379132,
+  "html_before": 112551,
+  "html_after": 64947
+}

@@ -1,23 +1,30 @@
+# v2: Runtime secrets come from an ignored .env file; never commit .env.
 services:
   wordpress:
     image: wordpress:latest
     container_name: wordpress
     restart: unless-stopped
     ports:
-      - "371:80"
       - "80:80"
+      - "371:80"
     environment:
       WORDPRESS_DB_HOST: wpdb:3306
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: WpDb_9xK2mZpWv4Q
       WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD:?Run scripts/init-env.sh first}
+      WORDPRESS_AUTH_KEY: ${WORDPRESS_AUTH_KEY:?Run scripts/init-env.sh first}
+      WORDPRESS_SECURE_AUTH_KEY: ${WORDPRESS_SECURE_AUTH_KEY:?Run scripts/init-env.sh first}
+      WORDPRESS_LOGGED_IN_KEY: ${WORDPRESS_LOGGED_IN_KEY:?Run scripts/init-env.sh first}
+      WORDPRESS_NONCE_KEY: ${WORDPRESS_NONCE_KEY:?Run scripts/init-env.sh first}
+      WORDPRESS_AUTH_SALT: ${WORDPRESS_AUTH_SALT:?Run scripts/init-env.sh first}
+      WORDPRESS_SECURE_AUTH_SALT: ${WORDPRESS_SECURE_AUTH_SALT:?Run scripts/init-env.sh first}
+      WORDPRESS_LOGGED_IN_SALT: ${WORDPRESS_LOGGED_IN_SALT:?Run scripts/init-env.sh first}
+      WORDPRESS_NONCE_SALT: ${WORDPRESS_NONCE_SALT:?Run scripts/init-env.sh first}
     volumes:
       - wp_html:/var/www/html
     depends_on:
       wpdb:
         condition: service_healthy
-    networks:
-      - wp-net
   wpdb:
     image: mariadb:11
     container_name: wpdb
@@ -25,21 +32,15 @@ services:
     environment:
       MARIADB_DATABASE: wordpress
       MARIADB_USER: wordpress
-      MARIADB_PASSWORD: WpDb_9xK2mZpWv4Q
-      MARIADB_ROOT_PASSWORD: WpRoot_7kL3nQx8vZ2
+      MARIADB_PASSWORD: ${WORDPRESS_DB_PASSWORD:?Run scripts/init-env.sh first}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Run scripts/init-env.sh first}
     volumes:
       - wp_db:/var/lib/mysql
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
       interval: 10s
       timeout: 5s
-      retries: 12
-      start_period: 120s
-    networks:
-      - wp-net
+      retries: 10
 volumes:
-  wp_db:
   wp_html:
-networks:
-  wp-net:
-    driver: bridge
+  wp_db:

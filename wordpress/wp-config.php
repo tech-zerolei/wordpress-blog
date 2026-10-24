@@ -47,7 +47,7 @@ define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
 define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
 
 /** Database password */
-define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password') );
+define( 'DB_PASSWORD', getenv_docker( 'WORDPRESS_DB_PASSWORD', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
 
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
@@ -75,14 +75,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '211ff9ffc07edd770fe0170fe4125fda0a156418') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '5bd0fcdaa79dc9a0fccb0a35354953385ce021c6') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    'af05dba7820d4e81ade272bd2d3c4195e09aabfa') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '06c4593975a8496bf73f885bad68b8b1cd8c4ff2') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '2dfa3902bd03ddbbfb6d6c1cbb2dfe9554195793') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '4a06a33c43a22274841a355488cb7c71073fd73c') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'e1b4867bc632c7049ef7a5f46db575f05c4f289c') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'c9513e58b405514518f2602a4b188d5afa0931e3') );
+define( 'AUTH_KEY',         getenv_docker( 'WORDPRESS_AUTH_KEY', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'SECURE_AUTH_KEY',  getenv_docker( 'WORDPRESS_SECURE_AUTH_KEY', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'LOGGED_IN_KEY',    getenv_docker( 'WORDPRESS_LOGGED_IN_KEY', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'NONCE_KEY',        getenv_docker( 'WORDPRESS_NONCE_KEY', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'AUTH_SALT',        getenv_docker( 'WORDPRESS_AUTH_SALT', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'SECURE_AUTH_SALT', getenv_docker( 'WORDPRESS_SECURE_AUTH_SALT', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'LOGGED_IN_SALT',   getenv_docker( 'WORDPRESS_LOGGED_IN_SALT', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
+define( 'NONCE_SALT',       getenv_docker( 'WORDPRESS_NONCE_SALT', 'REPLACE_VIA_ENV_BEFORE_DEPLOY' ) );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/

@@ -1,0 +1,7 @@
+cardLift: mount/unmount PASS
+heroGlow: mount/unmount PASS
+glassNav: mount/unmount PASS
+petals: DPR cap, canvas removal, RAF cancellation PASS
+readingProgress: listener/RAF/observer cleanup PASS
+clickStars: aborted listener PASS
+6 module lifecycle tests passed.

@@ -1,0 +1,65 @@
+[
+  {
+    "path": "main.js",
+    "http_status": 200,
+    "bytes": 14603,
+    "sha256": "e3ca991d5d1d7e423c6806498bd29f594d02b95c948ea0dca30d7cddd1901cca",
+    "matches_local": true
+  },
+  {
+    "path": "style.css",
+    "http_status": 200,
+    "bytes": 24181,
+    "sha256": "42e729eb7fef157d03cef8ee6cdb67c791cfd53ac0b1a2f5d0e61f98ed7210af",
+    "matches_local": true
+  },
+  {
+    "path": "assets/sakura-dusk.svg",
+    "http_status": 200,
+    "bytes": 3572,
+    "sha256": "bf773c5643ba26d00ee18f1b5d45c22cdc8c3ef3b483f298e6c0a6a93b4ff9af",
+    "matches_local": true
+  },
+  {
+    "path": "modules/clickStars.js",
+    "http_status": 200,
+    "bytes": 897,
+    "sha256": "612fd65dee4b283cc9f8b4029987979868ae3fee5517243710163a00eeb58e6a",
+    "matches_local": true
+  },
+  {
+    "path": "modules/petals.js",
+    "http_status": 200,
+    "bytes": 2131,
+    "sha256": "30ae021e592ed7c197561cf143f0fb0214b921dec66eba16353a9593ed52224d",
+    "matches_local": true
+  },
+  {
+    "path": "modules/cardLift.js",
+    "http_status": 200,
+    "bytes": 174,
+    "sha256": "2717badad13f3696c3189ee15d91a41b4bd30cf543151749e77f5920400edeb1",
+    "matches_local": true
+  },
+  {
+    "path": "modules/glassNav.js",
+    "http_status": 200,
+    "bytes": 294,
+    "sha256": "5ab69bf19743ad15aa69149fd10461291244309f7f88dd1d28206d3902a2c8cd",
+    "matches_local": true
+  },
+  {
+    "path": "modules/readingProgress.js",
+    "http_status": 200,
+    "bytes": 1270,
+    "sha256": "96012b94ccafd01baf2cf9c10f9f5ba11659df5ceb6815a2256704caea775452",
+    "matches_local": true
+  },
+  {
+    "path": "modules/heroGlow.js",
+    "http_status": 200,
+    "bytes": 210,
+    "sha256": "b743ba36e6fc497ac79bc40743499baa47d202db52cec0837bb4ab4f1ebb51c8",
+    "matches_local": true
+  }
+]

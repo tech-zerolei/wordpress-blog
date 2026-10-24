@@ -17,3 +17,14 @@ wordpress/wp-*.php
 Thumbs.db
 .idea/
 .vscode/
+
+# v2: never publish credentials, user records, or database backups
+.env
+.env.*
+!.env.example
+.private-v1/
+database/*.sql
+database/*.sql.gz
+backups/
+**/*private*.json
+**/disabled.flag

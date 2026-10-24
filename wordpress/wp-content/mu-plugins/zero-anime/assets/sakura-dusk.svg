@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="380" y1="0" x2="380" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#dddaf5"/><stop offset=".51" stop-color="#f8dfeb"/><stop offset="1" stop-color="#fff0e5"/></linearGradient>
+    <linearGradient id="water" x1="380" y1="270" x2="380" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#dedcf0"/><stop offset="1" stop-color="#a8bddc"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="240" x2="760" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#848aab"/><stop offset="1" stop-color="#535e83"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#fff0dc"/></radialGradient>
+    <g id="flower"><path d="M0-9C-9-17-17-3-6 1C-19 2-12 16-3 7C-1 21 13 13 5 4C19 5 17-10 7-4C12-17 0-21 0-9Z" fill="#f4b5d1"/><circle r="2.4" fill="#ffedf4"/></g>
+    <clipPath id="frame"><rect x="1" y="1" width="758" height="478" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h760v480H0z"/>
+    <circle cx="450" cy="165" r="77" fill="#fff3e7" opacity=".35"/><circle cx="450" cy="165" r="59" fill="url(#sun)"/>
+    <path d="M40 114c48-20 68-7 89-8m14-40c50-10 85-6 112 5M498 80c33-9 66-3 103 9m-60 18c25-4 59-1 88 6" stroke="#fff8fa" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+    <path d="m0 296 124-89 90 47 94-91 92 70 75-27 66 64 109-55 110 77v188H0Z" fill="#c3bad8"/>
+    <path d="m212 254 96-91 57 44-27-8-28-13-25 28-16-1-24 31Z" fill="#f6eaf0" opacity=".75"/>
+    <path d="M0 316c98-17 107-52 182-36s115 7 183-20 116 42 186 29 147-2 209-27v218H0Z" fill="#a4accd"/>
+    <path fill="url(#water)" d="M0 322h760v158H0z"/>
+    <g stroke="#f8edf3" stroke-linecap="round" opacity=".6"><path d="M349 335h188m-216 15h142m-74 15h129m-163 16h120m-189 17h265m-153 22h112m-301 17h117" stroke-width="3"/><path d="M81 355h72m466-5h65m-58 43h62" stroke-width="2"/></g>
+    <path d="M0 354c104-23 199 2 251 126H0ZM760 311c-108-9-189 69-230 169h230Z" fill="url(#hill)"/>
+    <path d="M615 375c-31 16-64 43-85 105h28c20-52 32-64 70-83Z" fill="#f0d7e5" opacity=".7"/>
+    <path d="M763 15C690 54 634 28 600 47c-38 21-72 20-125 17m200-32c-9 37-33 61-60 77M592 49c-19-7-37-24-43-51" stroke="#76607e" stroke-width="10" stroke-linecap="round"/>
+    <path d="M1 160c51-25 74-65 91-121m-30 79c-18-19-28-29-54-40M87 58c17 0 38-10 55-20" stroke="#85718c" stroke-width="8" stroke-linecap="round"/>
+    <g><use href="#flower" x="74" y="82"/><use href="#flower" x="91" y="39"/><use href="#flower" x="117" y="51"/><use href="#flower" x="31" y="110"/><use href="#flower" x="19" y="81"/><use href="#flower" x="133" y="32"/><use href="#flower" x="653" y="48"/><use href="#flower" x="628" y="78"/><use href="#flower" x="608" y="105"/><use href="#flower" x="599" y="47"/><use href="#flower" x="560" y="30"/><use href="#flower" x="526" y="62"/><use href="#flower" x="473" y="67"/><use href="#flower" x="720" y="31"/></g>
+    <g fill="#e9a4c4" opacity=".75"><path d="M194 123q14-3 8 10-15 2-8-10Zm400 52q14-3 8 10-15 2-8-10ZM117 250q14-3 8 10-15 2-8-10Zm460-32q14-3 8 10-15 2-8-10Z"/></g>
+    <g stroke="#fff9f4" stroke-width="2" stroke-linecap="round"><path d="M333 71v12m-6-6h12M211 163v10m-5-5h10m414 39v10m-5-5h10"/></g>
+    <path d="M82 459c2-23 15-46 34-48-5 15-13 32-34 48Zm-18-5c-1-16-9-31-21-35 1 15 7 29 21 35Z" fill="#b8c4d5"/>
+  </g>
+  <rect x="1" y="1" width="758" height="478" rx="26" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
+</svg>

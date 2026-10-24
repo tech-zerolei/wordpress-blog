@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-24",
+  "staged_files_scanned": 2128,
+  "historical_real_secrets_compared": 10,
+  "current_version_findings": [],
+  "historical_leak_remediated": false,
+  "scope": "Full current Git index; old v1 history is not cleaned."
+}
